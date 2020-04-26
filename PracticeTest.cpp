@@ -83,3 +83,10 @@ TEST(PracticeTest, is_palindrome_w_different_cases_two_spaces)
     bool actual = obj.isPalindrome("a A A");
     ASSERT_TRUE(actual);
 }
+
+TEST(PracticeTest, is_not_palindrome_w_different_cases_two_spaces)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("B a A");
+    ASSERT_FALSE(actual);
+}
