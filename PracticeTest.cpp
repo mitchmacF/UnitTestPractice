@@ -91,7 +91,7 @@ TEST(PracticeTest, is_not_palindrome_w_different_cases_two_spaces)
     ASSERT_FALSE(actual);
 }
 
-TEST(PracticeTest, is_descending)
+TEST(PracticeTest, is_descending_1)
 {
     int one = 1;
     int two = 2;
@@ -100,6 +100,96 @@ TEST(PracticeTest, is_descending)
     int first = 1;
     int second = 2;
     int third = 3;
+
+    Practice obj;
+    obj.sortDescending(first, second, third);
+
+    ASSERT_EQ(three, first);
+    ASSERT_EQ(two, second);
+    ASSERT_EQ(one, third);
+}
+
+TEST(PracticeTest, is_descending_2)
+{
+    int one = 1;
+    int two = 2;
+    int three = 3;
+
+    int first = 1;
+    int second = 3;
+    int third = 2;
+
+    Practice obj;
+    obj.sortDescending(first, second, third);
+
+    ASSERT_EQ(three, first);
+    ASSERT_EQ(two, second);
+    ASSERT_EQ(one, third);
+}
+
+TEST(PracticeTest, is_descending_3)
+{
+    int one = 1;
+    int two = 2;
+    int three = 3;
+
+    int first = 2;
+    int second = 1;
+    int third = 3;
+
+    Practice obj;
+    obj.sortDescending(first, second, third);
+
+    ASSERT_EQ(three, first);
+    ASSERT_EQ(two, second);
+    ASSERT_EQ(one, third);
+}
+
+TEST(PracticeTest, is_descending_4)
+{
+    int one = 1;
+    int two = 2;
+    int three = 3;
+
+    int first = 2;
+    int second = 3;
+    int third = 1;
+
+    Practice obj;
+    obj.sortDescending(first, second, third);
+
+    ASSERT_EQ(three, first);
+    ASSERT_EQ(two, second);
+    ASSERT_EQ(one, third);
+}
+
+TEST(PracticeTest, is_descending_5)
+{
+    int one = 1;
+    int two = 2;
+    int three = 3;
+
+    int first = 3;
+    int second = 1;
+    int third = 2;
+
+    Practice obj;
+    obj.sortDescending(first, second, third);
+
+    ASSERT_EQ(three, first);
+    ASSERT_EQ(two, second);
+    ASSERT_EQ(one, third);
+}
+
+TEST(PracticeTest, is_descending)
+{
+    int one = 1;
+    int two = 2;
+    int three = 3;
+
+    int first = 3;
+    int second = 2;
+    int third = 1;
 
     Practice obj;
     obj.sortDescending(first, second, third);
