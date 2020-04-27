@@ -90,3 +90,21 @@ TEST(PracticeTest, is_not_palindrome_w_different_cases_two_spaces)
     bool actual = obj.isPalindrome("B a A");
     ASSERT_FALSE(actual);
 }
+
+TEST(PracticeTest, is_descending)
+{
+    int one = 1;
+    int two = 2;
+    int three = 3;
+
+    int first = 1;
+    int second = 2;
+    int third = 3;
+
+    Practice obj;
+    obj.sortDescending(first, second, third);
+
+    ASSERT_EQ(three, first);
+    ASSERT_EQ(two, second);
+    ASSERT_EQ(one, third);
+}
