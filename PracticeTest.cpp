@@ -181,7 +181,7 @@ TEST(PracticeTest, is_descending_5)
     ASSERT_EQ(one, third);
 }
 
-TEST(PracticeTest, is_descending)
+TEST(PracticeTest, is_descending_6)
 {
     int one = 1;
     int two = 2;
