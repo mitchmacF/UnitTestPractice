@@ -3,7 +3,7 @@ dist: xenial
 language: cpp
 
 before_install:
-  - pip_install --user cpp-coveralls
+  - pip install --user cpp-coveralls
   - export CURRENT_PROJ_DIR=$(pwd)
   - mkdir gtest
   - cd gtest
